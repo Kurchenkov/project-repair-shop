@@ -1,0 +1,7 @@
+.Footer p {
+    background-color: darkorange;
+    /* font-weight: bold; */
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}

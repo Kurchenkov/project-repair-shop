@@ -1,0 +1,60 @@
+.PromoText {
+    grid-area: promo-text;
+}
+
+.PromoText h1 {
+    font-size: 72px;
+}
+
+.PromoText h3 {
+    font-size: 56px;
+}
+
+.PromoText h1, .PromoText h3 {
+    color: rgb(27, 67, 175);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.repairItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+}
+
+.repairItems li {
+    list-style: none;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.repairItems li::before {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) skewX(-7deg);
+    transform-origin: right;
+    background-color: darkorange;
+}
+
+.repairItems li::after {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-50%) skewX(-7deg);
+    transform-origin: right;
+    background-color: darkorange;
+}

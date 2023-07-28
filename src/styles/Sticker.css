@@ -1,0 +1,45 @@
+.Sticker {
+    grid-area: sticker;
+    display: grid;
+    justify-content: space-around;
+}
+
+.StickerList {
+    background-color: yellow;
+    border: 1px dashed black;
+    position: relative;
+    padding-right: 20px;
+}
+
+.StickerList li {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    list-style-type: "\002A\0020";
+}
+
+.StickerList::before {
+    border-radius: 50%;
+    border-right: 1px dashed black;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    background-color: darkorange;
+}
+
+.StickerList::after {
+    border-radius: 50%;
+    border-left: 1px dashed black;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 95%;
+    background-color: darkorange;
+}

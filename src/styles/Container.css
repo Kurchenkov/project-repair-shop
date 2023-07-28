@@ -1,0 +1,10 @@
+.Container {
+    background-color: darkorange;
+    display: grid;
+    grid-template-areas: 
+        'logo promo-text'
+        'sticker sticker'
+        'services services';
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
